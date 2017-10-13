@@ -14,12 +14,12 @@ class Halide < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
 
     # Remove unrecognized options if warned by configure
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
+    # system "./configure", "--disable-debug",
+    #                       "--disable-dependency-tracking",
+    #                       "--disable-silent-rules",
+    #                       "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
-    system "make", "install" # if this fails, try separate make/make install steps
+    # system "make", "install" # if this fails, try separate make/make install steps
   end
 
   test do
@@ -37,7 +37,7 @@ class Halide < Formula
 
   bottle do
     root_url "https://github.com/ryo-aoki/Halide/releases/download/release_2017_05_03/" # Optional root to calculate bottle URLs
-    sha256 "aad7f6a4f34edf3e7ba08c3a3d9d8b85c89728d9223248ff7afdbc77e7052af2" => :sierra
+    sha256 "c0999156bfadf0d01925c16cc464f9f104e76ae646c113c73dd329903264a023" => :yosemite
   end
 
   def pour_bottle?
