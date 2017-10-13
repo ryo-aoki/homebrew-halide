@@ -37,6 +37,9 @@ class Halide < Formula
 
   bottle do
     root_url "https://github.com/ryo-aoki/Halide/releases/download/release_2017_05_03/" # Optional root to calculate bottle URLs
+    sha256 "c0999156bfadf0d01925c16cc464f9f104e76ae646c113c73dd329903264a023" => :high_sierra
+    sha256 "c0999156bfadf0d01925c16cc464f9f104e76ae646c113c73dd329903264a023" => :sierra
+    sha256 "c0999156bfadf0d01925c16cc464f9f104e76ae646c113c73dd329903264a023" => :el_capitan
     sha256 "c0999156bfadf0d01925c16cc464f9f104e76ae646c113c73dd329903264a023" => :yosemite
   end
 
